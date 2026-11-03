@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | BlogSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="register">
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">BlogSpace</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="auth-wrap">
+    <section class="auth-card">
+      <p class="eyebrow">JOIN THE COMMUNITY</p>
+      <h1>Create account</h1>
+      <p class="muted">Demo only. No password is stored.</p>
+
+      <form id="register-form">
+        <label for="reg-name">Full name</label>
+        <input id="reg-name"
+          required maxlength="80"
+          autocomplete="name"
+          placeholder="Your name">
+
+        <label for="reg-email">Email</label>
+        <input id="reg-email"
+          type="email"
+          required
+          autocomplete="email"
+          placeholder="you@example.com">
+
+        <label for="reg-password">Password</label>
+        <input id="reg-password"
+          type="password"
+          minlength="6"
+          required
+          autocomplete="new-password"
+          placeholder="At least 6 characters">
+
+        <label for="reg-confirm">Confirm password</label>
+        <input id="reg-confirm"
+          type="password"
+          minlength="6"
+          required
+          autocomplete="new-password"
+          placeholder="Repeat password">
+
+        <button class="btn full" type="submit">
+          Create account
+        </button>
+
+        <p id="register-message"
+          class="form-message" role="status"></p>
+      </form>
+
+      <p class="muted">
+        Already registered?
+        <a href="login.html">Login</a>
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

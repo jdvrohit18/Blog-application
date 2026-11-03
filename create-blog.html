@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write a Blog | BlogSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="create">
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">BlogSpace</a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="auth-wrap wide">
+    <section class="auth-card">
+      <p class="eyebrow">YOUR NEXT IDEA</p>
+      <h1 id="editor-heading">Write a blog</h1>
+
+      <p class="muted">
+        Create a post. It will be saved in this browser.
+      </p>
+
+      <form id="blog-form">
+        <label for="blog-title">Blog title</label>
+        <input
+          id="blog-title"
+          maxlength="120"
+          required
+          placeholder="Give your story a title"
+        >
+
+        <label for="blog-excerpt">
+          Short description (optional)
+        </label>
+        <input
+          id="blog-excerpt"
+          maxlength="220"
+          placeholder="A short preview for readers"
+        >
+
+        <label for="blog-content">Blog content</label>
+        <textarea
+          id="blog-content"
+          rows="10"
+          maxlength="20000"
+          required
+          placeholder="Start writing here..."
+        ></textarea>
+
+        <div class="form-actions">
+          <button class="btn" type="submit" id="publish-btn">
+            Publish blog
+          </button>
+
+          <a class="btn btn-ghost" href="dashboard.html">
+            Cancel
+          </a>
+        </div>
+
+        <p id="blog-message"
+          class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

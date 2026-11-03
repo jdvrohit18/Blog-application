@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | BlogSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">BlogSpace</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="auth-wrap">
+    <section class="auth-card">
+      <p class="eyebrow">WELCOME BACK</p>
+      <h1>Login</h1>
+
+      <p class="muted">
+        Frontend demo login. Do not enter a real password.
+      </p>
+
+      <form id="login-form">
+        <label for="login-email">Email</label>
+        <input
+          id="login-email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="you@example.com"
+        >
+
+        <label for="login-password">Password</label>
+        <input
+          id="login-password"
+          type="password"
+          minlength="6"
+          required
+          placeholder="At least 6 characters"
+        >
+
+        <button class="btn full" type="submit">
+          Login
+        </button>
+
+        <p id="login-message"
+          class="form-message" role="status"></p>
+      </form>
+
+      <p class="muted">
+        New here?
+        <a href="register.html">Create an account</a>
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlogSpace | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">BlogSpace</a>
+
+      <button class="menu-toggle" id="menu-toggle"
+        aria-label="Toggle navigation">☰</button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a class="btn btn-small" href="create-blog.html">
+          Write a blog
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">A LITTLE SPACE FOR BIG IDEAS</p>
+
+        <h1>Ideas worth<br><span>sharing.</span></h1>
+
+        <p>
+          Discover stories, thoughts, and knowledge
+          from curious minds.
+        </p>
+
+        <a class="btn" href="create-blog.html">
+          Write your first blog →
+        </a>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE JOURNAL</p>
+          <h2>Latest stories</h2>
+        </div>
+
+        <a href="dashboard.html">Manage your posts ↗</a>
+      </div>
+
+      <div id="blog-list" class="blog-grid"
+        aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      BlogSpace · Built while learning frontend development.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
