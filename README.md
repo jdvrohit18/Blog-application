@@ -56,5 +56,5 @@ authentication, authorization and a database.
 
 ## Author
 
-Your Name
+Rohit Jadhav
 >>>>>>> 5f5cc3a (1st commit)
